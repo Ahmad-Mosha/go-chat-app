@@ -1,0 +1,8 @@
+/* Reuses classes from LoginPage.css */
+@import './LoginPage.css';
+
+/* Add any specific signup page overrides here if needed */
+.auth-form-container {
+  /* Make slightly wider for 4 fields */
+  max-width: 440px;
+}
