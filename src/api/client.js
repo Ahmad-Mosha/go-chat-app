@@ -6,7 +6,7 @@
  * when `VITE_MOCK` is true (default).
  */
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+const BASE_URL = import.meta.env.VITE_API_URL || '';
 
 export async function apiRequest(endpoint, options = {}) {
   const token = localStorage.getItem('token');

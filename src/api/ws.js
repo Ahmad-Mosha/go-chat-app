@@ -9,7 +9,7 @@
  *   // later: disconnect();
  */
 
-const WS_BASE = import.meta.env.VITE_WS_URL || 'ws://localhost:8080';
+const WS_BASE = import.meta.env.VITE_WS_URL || (window.location.protocol === 'https:' ? `wss://${window.location.host}` : `ws://${window.location.host}`);
 const USE_MOCK = false;
 
 export function connectWebSocket(token, onMessage) {
